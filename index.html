@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Social Hub</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Background */
+    .background {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url('your-photo.jpg') no-repeat center/cover;
+      filter: blur(12px) brightness(0.6);
+      z-index: -1;
+    }
+
+    /* Container */
+    .container {
+      position: relative;
+      max-width: 400px;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: white;
+      backdrop-filter: blur(12px);
+      background: rgba(0,0,0,0.25);
+      padding: 25px;
+      border-radius: 20px;
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+
+    /* Base Button */
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px;
+      margin: 12px 0;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+
+      /* Glass base */
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.25);
+
+      transition: 0.3s;
+    }
+
+    .link i {
+      font-size: 18px;
+    }
+
+    .link:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+
+    /* Gradient Tints (semi-transparent) */
+    .instagram {
+      background: linear-gradient(45deg, rgba(245,133,41,0.4), rgba(221,42,123,0.4), rgba(129,52,175,0.4));
+    }
+
+    .whatsapp {
+      background: linear-gradient(45deg, rgba(37,211,102,0.4), rgba(18,140,126,0.4));
+    }
+
+    .snapchat {
+      background: linear-gradient(45deg, rgba(255,252,0,0.4), rgba(255,215,0,0.4));
+      color: black;
+    }
+
+    .linkedin {
+      background: linear-gradient(45deg, rgba(0,119,181,0.4), rgba(0,160,220,0.4));
+    }
+
+    .spotify {
+      background: linear-gradient(45deg, rgba(29,185,84,0.4), rgba(30,215,96,0.4));
+      color: black;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+    <img src="your-photo.jpg" class="profile-img">
+    <h1>Your Name</h1>
+    <p>Connect with me 🚀</p>
+
+    <a class="link instagram" href="#">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a class="link whatsapp" href="#">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <a class="link snapchat" href="#">
+      <i class="fab fa-snapchat"></i> Snapchat
+    </a>
+
+    <a class="link linkedin" href="#">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+
+    <a class="link spotify" href="#">
+      <i class="fab fa-spotify"></i> Spotify
+    </a>
+
+  </div>
+
+</body>
+</html>
